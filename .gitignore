@@ -1,0 +1,16 @@
+node_modules/
+
+build/
+.idea
+.gradle
+*.iml
+*.hprof
+.cxx/
+# *.keystore
+!debug.keystore
+.kotlin/
+
+# node.js
+#
+npm-debug.log
+yarn-error.log

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "880061968824",
+    "project_id": "gmm-service",
+    "storage_bucket": "gmm-service.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880061968824:android:ef8f27e3c375ce4908df4d",
+        "android_client_info": {
+          "package_name": "com.gmmservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880061968824-5lrnfcittgnagbh866oamlmlrqi38eeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCcBTUQb5CaRLX-UJlZn0qWRJC_YJ7_rI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880061968824-5lrnfcittgnagbh866oamlmlrqi38eeb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "880061968824-ibbp4u0c8nm1on3icdqtt1i3gj1k8sn1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.gmmservice.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
