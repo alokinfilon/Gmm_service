@@ -14,8 +14,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 import com.facebook.common.logging.FLog;
-import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
 
 import com.facebook.react.modules.storage.ReactDatabaseSupplier;
 
@@ -51,7 +49,6 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
-      Fabric.with(this, new Crashlytics());
       FLog.setLoggingDelegate(ReactNativeFabricLogger.getInstance());
       SoLoader.init(this, /* native exopackage */ false);
       long size = 50L * 1024L * 1024L; // 50 MB 

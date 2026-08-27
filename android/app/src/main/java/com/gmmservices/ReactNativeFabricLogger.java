@@ -7,8 +7,6 @@ import java.io.StringWriter;
 
 import android.util.Log;
 
-import com.crashlytics.android.Crashlytics;
-
 /**
  * Default implementation of {@link LoggingDelegate}.
  */
@@ -126,19 +124,11 @@ public class ReactNativeFabricLogger implements LoggingDelegate {
   }
 
   private void println(int priority, String tag, String msg) {
-    if (BuildConfig.DEBUG) {
-      Log.println(priority, prefixTag(tag), msg);
-    } else {
-      Crashlytics.log(priority, prefixTag(tag), msg);
-    }
+    Log.println(priority, prefixTag(tag), msg);
   }
 
   private void println(int priority, String tag, String msg, Throwable tr) {
-    if (BuildConfig.DEBUG) {
-      Log.println(priority, prefixTag(tag), getMsg(msg, tr));
-    } else {
-      Crashlytics.log(priority, prefixTag(tag), msg);
-    }
+    Log.println(priority, prefixTag(tag), getMsg(msg, tr));
   }
 
   private String prefixTag(String tag) {
